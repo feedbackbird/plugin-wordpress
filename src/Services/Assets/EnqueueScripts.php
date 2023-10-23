@@ -30,7 +30,7 @@ class EnqueueScripts
 	{
 		return [
 			'user_email' => function_exists('wp_get_current_user') ? wp_get_current_user()->user_email : '',
-			'customization' => [
+			'config' => [
 				"position" => Option::get('widget_position'),
 				"color" => Option::get('widget_color'),
 				"button" => Option::get('button_label'),

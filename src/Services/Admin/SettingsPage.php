@@ -152,7 +152,7 @@ class SettingsPage
 	public function uid_callback()
 	{
 		printf(
-			'<input class="regular-text" type="text" name="feedbackbird[uid]" id="uid" value="%s"><p class="description">If you don’t have an UDI, you should create a new account at <a href="https://feedbackbird.io/" target="_blank">FeedbackBird</a> and get it through the integrations.</p>',
+			'<input class="regular-text" type="text" name="feedbackbird[uid]" id="uid" value="%s"><p class="description">If you don’t have an UDI, you should create a new account at <a href="https://feedbackbird.io/" target="_blank">FeedbackBird</a> and get it in your Profile → Settings.</p>',
 			isset($this->feedbackbird_options['uid']) ? esc_attr($this->feedbackbird_options['uid']) : ''
 		);
 	}
@@ -161,13 +161,13 @@ class SettingsPage
 	{
 		?> <select name="feedbackbird[widget_position]" id="widget_position">
 		<?php $selected = (isset($this->feedbackbird_options['widget_position']) && $this->feedbackbird_options['widget_position'] === 'top-left') ? 'selected' : ''; ?>
-		<option value="top-left" <?php echo $selected; ?>>Top Left</option>
+		<option value="top-left" <?php echo esc_attr($selected); ?>>Top Left</option>
 		<?php $selected = (isset($this->feedbackbird_options['widget_position']) && $this->feedbackbird_options['widget_position'] === 'top-right') ? 'selected' : ''; ?>
-		<option value="top-right" <?php echo $selected; ?>>Top Right</option>
-		<?php $selected = (isset($this->feedbackbird_options['widget_position']) && $this->feedbackbird_options['widget_position'] === 'bottom-right') ? 'selected' : ''; ?>
-		<option value="bottom-right" <?php echo $selected; ?>>Bottom Right</option>
-		<?php $selected = (isset($this->feedbackbird_options['widget_position']) && $this->feedbackbird_options['widget_position'] === 'bottom-left') ? 'selected' : ''; ?>
-		<option value="bottom-left" <?php echo $selected; ?>>Bottom Left</option>
+		<option value="top-right" <?php echo esc_attr($selected); ?>>Top Right</option>
+		<?php $selected = (isset($this->feedbackbird_options['widget_position']) && $this->feedbackbird_options['widget_position'] === 'right') ? 'selected' : ''; ?>
+		<option value="right" <?php echo esc_attr($selected); ?>>Right</option>
+		<?php $selected = (isset($this->feedbackbird_options['widget_position']) && $this->feedbackbird_options['widget_position'] === 'left') ? 'selected' : ''; ?>
+		<option value="left" <?php echo esc_attr($selected); ?>>Left</option>
 	</select><p class="description">Select the position of the widget on your website.</p> <?php
 	}
 
