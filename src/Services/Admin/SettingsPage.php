@@ -174,8 +174,9 @@ class SettingsPage
 	public function widget_color_callback()
 	{
 		printf(
-			'<input class="regular-text" type="text" name="feedbackbird[widget_color]" id="widget_color" value="%s"><p class="description">Choose a color for the widget. example <code>#76c436</code></p>',
-			isset($this->feedbackbird_options['widget_color']) ? esc_attr($this->feedbackbird_options['widget_color']) : ''
+			'<input class="regular-text" type="text" name="feedbackbird[widget_color]" id="widget_color" value="%s"><p class="description">Choose a widget color by entering the HEX color code, for example <code>#76c436</code>. Find more colors at <a target="_blank" href="%s">Color Hex</a></p>',
+			isset($this->feedbackbird_options['widget_color']) ? esc_attr($this->feedbackbird_options['widget_color']) : '',
+			'https://www.color-hex.com/'
 		);
 	}
 
