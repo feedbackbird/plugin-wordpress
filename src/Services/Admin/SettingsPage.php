@@ -168,6 +168,10 @@ class SettingsPage
 		<option value="right" <?php echo esc_attr($selected); ?>>Right</option>
 		<?php $selected = (isset($this->feedbackbird_options['widget_position']) && $this->feedbackbird_options['widget_position'] === 'left') ? 'selected' : ''; ?>
 		<option value="left" <?php echo esc_attr($selected); ?>>Left</option>
+		<?php $selected = (isset($this->feedbackbird_options['widget_position']) && $this->feedbackbird_options['widget_position'] === 'bottom-left') ? 'selected' : ''; ?>
+		<option value="bottom-left" <?php echo esc_attr($selected); ?>>Bottom Left</option>
+		<?php $selected = (isset($this->feedbackbird_options['widget_position']) && $this->feedbackbird_options['widget_position'] === 'bottom-right') ? 'selected' : ''; ?>
+		<option value="bottom-right" <?php echo esc_attr($selected); ?>>Bottom Right</option>
 	</select><p class="description">Select the position of the widget on your website.</p> <?php
 	}
 
