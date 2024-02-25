@@ -152,7 +152,7 @@ class SettingsPage
 	public function uid_callback()
 	{
 		printf(
-			'<input class="regular-text" type="text" name="feedbackbird[uid]" id="uid" value="%s"><p class="description">If you don’t have an Account UID, you should create a new account at <a href="https://feedbackbird.io/dashboard/settings" target="_blank">FeedbackBird</a> and get it in your Profile → Settings.</p>',
+			'<input class="regular-text" type="text" name="feedbackbird[uid]" id="uid" value="%s"><p class="description">If you don’t have an Account UID, you should create a new account at <a href="https://feedbackbird.io/" target="_blank">FeedbackBird</a> and get it in your Profile → Settings.</p>',
 			isset($this->feedbackbird_options['uid']) ? esc_attr($this->feedbackbird_options['uid']) : ''
 		);
 	}
