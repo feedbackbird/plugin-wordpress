@@ -152,7 +152,7 @@ class SettingsPage
 	public function uid_callback()
 	{
 		printf(
-			'<input class="regular-text" type="text" name="feedbackbird[uid]" id="uid" value="%s"><p class="description">If you don’t have an Account UID, you should create a new account at <a href="https://feedbackbird.io/dashboard/settings" target="_blank">FeedbackBird</a> and get it in your Profile → Settings.</p>',
+			'<input class="regular-text" type="text" name="feedbackbird[uid]" id="uid" value="%s"><p class="description">If you don’t have an Account UID, you should create a new account at <a href="https://feedbackbird.io/" target="_blank">FeedbackBird</a> and get it in your Profile → Settings.</p>',
 			isset($this->feedbackbird_options['uid']) ? esc_attr($this->feedbackbird_options['uid']) : ''
 		);
 	}
@@ -168,14 +168,19 @@ class SettingsPage
 		<option value="right" <?php echo esc_attr($selected); ?>>Right</option>
 		<?php $selected = (isset($this->feedbackbird_options['widget_position']) && $this->feedbackbird_options['widget_position'] === 'left') ? 'selected' : ''; ?>
 		<option value="left" <?php echo esc_attr($selected); ?>>Left</option>
+		<?php $selected = (isset($this->feedbackbird_options['widget_position']) && $this->feedbackbird_options['widget_position'] === 'bottom-left') ? 'selected' : ''; ?>
+		<option value="bottom-left" <?php echo esc_attr($selected); ?>>Bottom Left</option>
+		<?php $selected = (isset($this->feedbackbird_options['widget_position']) && $this->feedbackbird_options['widget_position'] === 'bottom-right') ? 'selected' : ''; ?>
+		<option value="bottom-right" <?php echo esc_attr($selected); ?>>Bottom Right</option>
 	</select><p class="description">Select the position of the widget on your website.</p> <?php
 	}
 
 	public function widget_color_callback()
 	{
 		printf(
-			'<input class="regular-text" type="text" name="feedbackbird[widget_color]" id="widget_color" value="%s"><p class="description">Choose a color for the widget. example <code>#76c436</code></p>',
-			isset($this->feedbackbird_options['widget_color']) ? esc_attr($this->feedbackbird_options['widget_color']) : ''
+			'<input class="regular-text" type="text" name="feedbackbird[widget_color]" id="widget_color" value="%s"><p class="description">Choose a widget color by entering the HEX color code, for example <code>#76c436</code>. Find more colors at <a target="_blank" href="%s">Color Hex</a></p>',
+			isset($this->feedbackbird_options['widget_color']) ? esc_attr($this->feedbackbird_options['widget_color']) : '',
+			'https://www.color-hex.com/'
 		);
 	}
 
