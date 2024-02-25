@@ -8,7 +8,7 @@ Stable tag: 1.0.0
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
-Display the FeedbackBird widget in WordPress, integrate with the FeedbackBird service, and collect valuable feedback from your users. Understand their needs better and enhance user engagement through FeedbackBird's powerful feedback management platform.
+Display the FeedbackBird widget in WordPress, integrate with the FeedbackBird service, and collect valuable feedback from your users.
 
 == Description ==
 
