@@ -5,8 +5,9 @@ Requires at least: 4.5
 Tested up to: 6.4
 Requires PHP: 5.6
 Stable tag: 1.0.0
-License: GPLv3
-License URI: https://www.gnu.org/licenses/gpl-3.0.html
+Requires at least: 4.0
+License: GPL-2.0+
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
 Display the FeedbackBird widget in WordPress, integrate with the FeedbackBird service, and collect valuable feedback from your users.
 
@@ -48,6 +49,8 @@ FeedbackBird is designed to be compatible with most WordPress themes. The widget
 
 = 1.0.0 =
 * Initial release.
+
+[See changelog for all versions](https://raw.githubusercontent.com/feedbackbird/plugin-wordpress/master/CHANGELOG.md).
 
 == Upgrade Notice ==
 
