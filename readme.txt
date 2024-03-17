@@ -2,7 +2,7 @@
 Contributors: mostafa.s1990, veronalabs
 Tags: feedback, user engagement, widget, feedback management
 Requires at least: 4.5
-Tested up to: 6.4
+Tested up to: 6.5
 Requires PHP: 5.6
 Stable tag: 1.0.0
 Requires at least: 4.0

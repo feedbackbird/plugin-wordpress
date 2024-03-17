@@ -39,6 +39,11 @@ class EnqueueScripts
             $objects['config']['position'] = $widget_position;
         }
 
+        $widget_opening_style = Option::get('widget_opening_style');
+        if ($widget_opening_style !== null && $widget_opening_style !== '') {
+            $objects['config']['opening_style'] = $widget_opening_style;
+        }
+
         $widget_color = Option::get('widget_color');
         if ($widget_color !== null && $widget_color !== '') {
             $objects['config']['color'] = $widget_color;
