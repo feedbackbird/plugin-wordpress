@@ -81,6 +81,14 @@ class SettingsPage
 			'feedbackbird_setting_section' // section
 		);
 
+        add_settings_field(
+			'widget_opening_style', // id
+			'Widget Opening Style', // title
+			array($this, 'widget_opening_style_callback'), // callback
+			'feedbackbird-admin', // page
+			'feedbackbird_setting_section' // section
+		);
+
 		add_settings_field(
 			'widget_color', // id
 			'Widget Color', // title
@@ -119,6 +127,10 @@ class SettingsPage
 
 		if (isset($input['widget_position'])) {
 			$sanitary_values['widget_position'] = $input['widget_position'];
+		}
+
+        if (isset($input['widget_opening_style'])) {
+			$sanitary_values['widget_opening_style'] = $input['widget_opening_style'];
 		}
 
 		if (isset($input['widget_color'])) {
@@ -173,6 +185,16 @@ class SettingsPage
 		<?php $selected = (isset($this->feedbackbird_options['widget_position']) && $this->feedbackbird_options['widget_position'] === 'bottom-right') ? 'selected' : ''; ?>
 		<option value="bottom-right" <?php echo esc_attr($selected); ?>>Bottom Right</option>
 	</select><p class="description">Select the position of the widget on your website.</p> <?php
+	}
+
+    public function widget_opening_style_callback()
+	{
+		?> <select name="feedbackbird[widget_opening_style]" id="widget_opening_style">
+		<?php $selected = (isset($this->feedbackbird_options['widget_opening_style']) && $this->feedbackbird_options['widget_opening_style'] === 'sides') ? 'selected' : ''; ?>
+		<option value="sides" <?php echo esc_attr($selected); ?>>Sides</option>
+		<?php $selected = (isset($this->feedbackbird_options['widget_opening_style']) && $this->feedbackbird_options['widget_opening_style'] === 'modal') ? 'selected' : ''; ?>
+		<option value="modal" <?php echo esc_attr($selected); ?>>Modal</option>
+	</select><p class="description">Please select your preferred method of opening the widget: either as a side panel or a modal window.</p> <?php
 	}
 
 	public function widget_color_callback()
