@@ -15,7 +15,7 @@ class EnqueueScripts
     {
         if (Option::get('widget_status')) {
             wp_enqueue_script('feedbackbird-widget', sprintf('https://cdn.jsdelivr.net/gh/feedbackbird/assets@master/wp/app.js?uid=%s', Option::get('uid')), array(), '1.0.0', true);
-            wp_add_inline_script('feedbackbird-widget', sprintf('var feedbackBirdObject = %s;', json_encode($this->generateObjects())));
+            wp_add_inline_script('feedbackbird-widget', sprintf('var feedbackBirdObject = %s;', wp_json_encode($this->generateObjects())));
 
             add_filter('script_loader_tag', function ($tag, $handle, $src) {
                 if ('feedbackbird-widget' === $handle) {

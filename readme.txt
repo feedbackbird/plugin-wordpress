@@ -1,10 +1,10 @@
 === FeedbackBird ===
 Contributors: mostafa.s1990, veronalabs
-Tags: feedback, user engagement, widget, feedback management
+Tags: feedback, user engagement, widget, management
 Requires at least: 4.5
 Tested up to: 6.5
 Requires PHP: 5.6
-Stable tag: 1.0.0
+Stable tag: 1.0.1
 Requires at least: 4.0
 License: GPL-2.0+
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -47,15 +47,13 @@ FeedbackBird is designed to be compatible with most WordPress themes. The widget
 
 == Changelog ==
 
-= 1.0.0 =
-* Initial release.
+= v1.0.1 =
+* Addition: Added option Opening Style.
+* Improvement: Implemented minor enhancements.
 
 [See changelog for all versions](https://raw.githubusercontent.com/feedbackbird/plugin-wordpress/master/CHANGELOG.md).
 
 == Upgrade Notice ==
-
-= 1.0.0 =
-Initial release of the FeedbackBird plugin.
 
 == Screenshots ==
 
