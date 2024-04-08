@@ -6,7 +6,7 @@
  * Author: VeronaLabs
  * Author URI: https://veronalabs.com
  * Text Domain: feedbackbird
- * Version: 1.0.1
+ * Version: 1.0.2
  * License: GPL-2.0+
  * License URI: https://www.gnu.org/licenses/gpl-2.0.html
  * Requires at least: 4.0
