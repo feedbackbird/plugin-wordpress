@@ -58,7 +58,7 @@ class SettingsPage
 		);
 
 		add_settings_field(
-			'widget_status', // id
+			'feedbackbird_widget_status', // id
 			'Status', // title
 			array($this, 'widget_status_callback'), // callback
 			'feedbackbird-admin', // page
@@ -66,7 +66,7 @@ class SettingsPage
 		);
 
 		add_settings_field(
-			'uid', // id
+			'feedbackbird_uid', // id
 			'Account UID', // title
 			array($this, 'uid_callback'), // callback
 			'feedbackbird-admin', // page
@@ -74,7 +74,7 @@ class SettingsPage
 		);
 
 		add_settings_field(
-			'widget_position', // id
+			'feedbackbird_widget_position', // id
 			'Widget Position', // title
 			array($this, 'widget_position_callback'), // callback
 			'feedbackbird-admin', // page
@@ -82,7 +82,7 @@ class SettingsPage
 		);
 
         add_settings_field(
-			'widget_opening_style', // id
+			'feedbackbird_widget_opening_style', // id
 			'Widget Opening Style', // title
 			array($this, 'widget_opening_style_callback'), // callback
 			'feedbackbird-admin', // page
@@ -90,7 +90,7 @@ class SettingsPage
 		);
 
 		add_settings_field(
-			'widget_color', // id
+			'feedbackbird_widget_color', // id
 			'Widget Color', // title
 			array($this, 'widget_color_callback'), // callback
 			'feedbackbird-admin', // page
@@ -98,7 +98,7 @@ class SettingsPage
 		);
 
 		add_settings_field(
-			'button_label', // id
+			'feedbackbird_button_label', // id
 			'Button Label', // title
 			array($this, 'button_label_callback'), // callback
 			'feedbackbird-admin', // page
@@ -106,7 +106,7 @@ class SettingsPage
 		);
 
 		add_settings_field(
-			'widget_subtitle', // id
+			'feedbackbird_widget_subtitle', // id
 			'Widget Subtitle', // title
 			array($this, 'widget_subtitle_callback'), // callback
 			'feedbackbird-admin', // page
