@@ -11,6 +11,7 @@ class EnqueueScripts
     public function init()
     {
         add_action('wp_enqueue_scripts', [$this, 'registerWidgetScripts']);
+        add_filter('script_loader_tag', array($this, 'scriptLoaderTags'), 10, 3);
     }
 
     public function registerWidgetScripts()
@@ -18,14 +19,16 @@ class EnqueueScripts
         if (Option::get('widget_status')) {
             wp_enqueue_script('feedbackbird-widget', sprintf('%s/assets/js/app.js?uid=%s', esc_url(FEEDBACKBIRD_URL), Option::get('uid')), array(), '1.1.9', true);
             wp_add_inline_script('feedbackbird-widget', sprintf('var feedbackBirdObject = %s;', wp_json_encode($this->generateObjects())));
-
-            add_filter('script_loader_tag', function ($tag, $handle, $src) {
-                if ('feedbackbird-widget' === $handle) {
-                    return preg_replace('/^<script /i', '<script type="module" crossorigin="crossorigin" ', $tag);
-                }
-                return $tag;
-            }, 10, 3);
         }
+    }
+
+    public function scriptLoaderTags($tag, $handle, $src)
+    {
+        if ('feedbackbird-widget' === $handle) {
+            return preg_replace('/^<script /i', '<script type="module" crossorigin="crossorigin" ', $tag);
+        }
+
+        return $tag;
     }
 
     private function generateObjects()
