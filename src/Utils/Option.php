@@ -2,6 +2,8 @@
 
 namespace FeedbackBird\Utils;
 
+if (!defined('ABSPATH')) exit;
+
 class Option
 {
     private static $optionName = 'feedbackbird';
