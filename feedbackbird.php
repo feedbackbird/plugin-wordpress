@@ -43,6 +43,10 @@ class FeedbackBird
 
     private function includeFiles()
     {
+        // Set Plugin path and url defines.
+        define('FEEDBACKBIRD_URL', plugin_dir_url(__FILE__));
+        define('FEEDBACKBIRD_DIR', plugin_dir_path(__FILE__));
+
         include_once(plugin_dir_path(__FILE__) . 'src/Utils/Option.php');
         include_once(plugin_dir_path(__FILE__) . 'src/Services/Admin/SettingsPage.php');
         include_once(plugin_dir_path(__FILE__) . 'src/Services/Assets/EnqueueScripts.php');
