@@ -2,6 +2,8 @@
 
 namespace FeedbackBird\Services\Admin;
 
+if (!defined('ABSPATH')) exit;
+
 class SettingsPage
 {
 	private $feedbackbird_options;

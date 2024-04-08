@@ -15,6 +15,8 @@
  * @package FeedbackBird
  */
 
+if (!defined('ABSPATH')) exit;
+
 use FeedbackBird\Assets\EnqueueScripts;
 use FeedbackBird\Services\Admin\SettingsPage;
 

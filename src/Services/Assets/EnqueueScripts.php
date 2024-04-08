@@ -4,6 +4,8 @@ namespace FeedbackBird\Assets;
 
 use FeedbackBird\Utils\Option;
 
+if (!defined('ABSPATH')) exit;
+
 class EnqueueScripts
 {
     public function init()
