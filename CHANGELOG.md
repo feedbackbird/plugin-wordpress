@@ -1,3 +1,6 @@
+= v1.0.3 =
+* Improvement: Implemented minor enhancements.
+
 = v1.0.2 =
 * Improvement: Enhanced script loader tags for better performance.
 * Improvement: Prevented direct access to PHP files to enhance application security.

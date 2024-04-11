@@ -4,7 +4,7 @@ Tags: feedback, user engagement, widget, management
 Requires at least: 4.5
 Tested up to: 6.5
 Requires PHP: 5.6
-Stable tag: 1.0.2
+Stable tag: 1.0.3
 Requires at least: 4.0
 License: GPL-2.0+
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -47,11 +47,8 @@ FeedbackBird is designed to be compatible with most WordPress themes. The widget
 
 == Changelog ==
 
-= v1.0.2 =
-* Improvement: Enhanced script loader tags for better performance.
-* Improvement: Prevented direct access to PHP files to enhance application security.
-* Refactoring: Prefixed settings attributes to avoid conflicts and ensure uniqueness.
-* Improvement: Moved `app.js` to a local directory for improved load times.
+= v1.0.3 =
+* Improvement: Implemented minor enhancements.
 
 [See changelog for all versions](https://raw.githubusercontent.com/feedbackbird/plugin-wordpress/master/CHANGELOG.md).
 
