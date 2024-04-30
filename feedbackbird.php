@@ -2,11 +2,11 @@
 /**
  * Plugin Name: FeedbackBird
  * Plugin URI: https://feedbackbird.io
- * Description:Display the FeedbackBird widget in WordPress, Collect valuable feedback effortlessly and enhance user engagement.
+ * Description: FeedbackBird helps you easily gather feedback through your WordPress website, letting you understand and meet your audience's needs better.
  * Author: VeronaLabs
  * Author URI: https://veronalabs.com
  * Text Domain: feedbackbird
- * Version: 1.0.3
+ * Version: 1.0.4
  * License: GPL-2.0+
  * License URI: https://www.gnu.org/licenses/gpl-2.0.html
  * Requires at least: 4.0

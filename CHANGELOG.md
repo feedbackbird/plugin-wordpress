@@ -1,3 +1,6 @@
+= v1.0.4 =
+* Improvement: Updated readme and plugin description.
+
 = v1.0.3 =
 * Improvement: Implemented minor enhancements.
 
