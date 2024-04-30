@@ -1,15 +1,15 @@
-=== FeedbackBird ===
+=== FeedbackBird - Easily Collect Ideas, Issues, and Feedback on WordPress ===
 Contributors: mostafa.s1990, veronalabs
-Tags: feedback, user engagement, widget, management
+Tags: feedback, capture, idea, issue
 Requires at least: 4.5
 Tested up to: 6.5
 Requires PHP: 5.6
-Stable tag: 1.0.3
+Stable tag: 1.0.4
 Requires at least: 4.0
 License: GPL-2.0+
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
-Display the FeedbackBird widget in WordPress, integrate with the FeedbackBird service, and collect valuable feedback from your users.
+FeedbackBird helps you easily gather feedback through your WordPress website, letting you understand and meet your audience's needs better.
 
 == Description ==
 
@@ -47,8 +47,8 @@ FeedbackBird is designed to be compatible with most WordPress themes. The widget
 
 == Changelog ==
 
-= v1.0.3 =
-* Improvement: Implemented minor enhancements.
+= v1.0.4 =
+* Improvement: Updated readme and plugin description.
 
 [See changelog for all versions](https://raw.githubusercontent.com/feedbackbird/plugin-wordpress/master/CHANGELOG.md).
 
@@ -56,7 +56,8 @@ FeedbackBird is designed to be compatible with most WordPress themes. The widget
 
 == Screenshots ==
 
-1. [screenshot-1.png] - Feedback Widget (Closed)
+1. [screenshot-1.png] - Feedback button
 2. [screenshot-2.png] - Feedback Widget (Opened)
-3. [screenshot-3.png] - Feedback
-4. [screenshot-4.png] - Settings Page
+3. [screenshot-3.png] - Feedback Widget (Opened)
+3. [screenshot-4.png] - Feedback Widget (Opened)
+4. [screenshot-5.png] - Settings Page
